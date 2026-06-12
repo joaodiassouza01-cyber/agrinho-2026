@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Agro Inovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PARTE 1: Cabeçalho e Menu -->
+    <header class="topo-site">
+        <div class="logo">🌱 AgroVida</div>
+        <nav>
+            <button class="botao-menu" onclick="mostrarAlerta('Bem-vindo ao portal!')">Início</button>
+            <button class="botao-menu" onclick="mostrarAlerta('Conheça nossa tecnologia!')">Tecnologia</button>
+        </nav>
+    </header>
+
+    <!-- PARTE 2: Banner de Destaque -->
+    <section class="banner">
+        <h1>O Futuro do Agro é Verde</h1>
+        <p>Tecnologia e campo trabalhando juntos por um mundo melhor.</p>
+        <button id="btn-interativo">Clique para semear uma ideia</button>
+        <p id="mensagem-semente" class="escondido">🌱 Você semeou inovação! O agro não para de crescer.</p>
+    </section>
+
+    <!-- PARTE 3: Galeria de Conteúdo -->
+    <section class="conteudo">
+        <h2>Nossos Pilares</h2>
+        <div class="cards-container">
+            <div class="card" onclick="destacarCard(this)">
+                <h3>Sustentabilidade</h3>
+                <p>Cuidar da terra para colher o amanhã.</p>
+            </div>
+            <div class="card" onclick="destacarCard(this)">
+                <h3>Tecnologia</h3>
+                <p>Drones e dados para monitorar sua lavoura.</p>
+            </div>
+            <div class="card" onclick="destacarCard(this)">
+                <h3>Produção</h3>
+                <p>Alimentos de alta qualidade na sua mesa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTE 4: Rodapé Informativo -->
+    <footer class="rodape">
+        <p>&copy; 2026 Portal AgroVida. Todos os direitos reservados.</p>
+        <div class="interacao-rodape">
+            <span id="contador-cliques">0</span> pessoas apoiam o agro sustentável!
+            <button onclick="mudarContador()">Aoiar Ideia</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
